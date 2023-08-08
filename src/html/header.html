@@ -1,0 +1,35 @@
+<header class="header">
+  <div class="header-container">
+    <a href="#" class="header__logo logo"><img src="@img/logo.png" alt=""></a>
+    <nav class="header__menu menu">
+      <a href="#" class="nav-logo"><img src="@img/logo.png" alt=""></a>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+        <li class="menu__item has-dropdown">
+          <a href="#" class="menu__link">Pages <span><i class="fa fa-angle-down"></i></span></a>
+          <ul class="sub-menu">
+            <li><a href="#">OUR GAMES</a></li>
+            <li><a href="#">BONUSES</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__meta meta">
+      <a href="tel:+380639876543" class="meta__phone"><i class="fa-solid fa-phone"></i><span>(063) 987 65 43</span></a>
+      <div class="meta__lang lang">
+        <div class="lang--current">EN</div>
+        <ul class="lang-drop">
+          <li><a href="#">EN</a></li>
+          <li><a href="#">RU</a></li>
+          <li><a href="#">UA</a></li>
+        </ul>
+      </div>
+      <a href="#" class="meta__social"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    @@include('./iconMenu.html', {})
+  </div>
+</header>

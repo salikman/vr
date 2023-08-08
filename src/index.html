@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+
+<body>
+  <div class="wrapper">
+    <div class="m_overlay-bg"></div>
+    @@include('html/header.html', {})
+    <main class="page">
+      <div data-observ></div>
+      @@include('html/home-section/intro.html')
+      @@include('html/home-section/block-box.html')
+      @@include('html/home-section/about.html')
+      @@include('html/home-section/reviews.html')
+      @@include('html/home-section/testimonials.html')
+      @@include('html/home-section/news.html')
+    </main>
+    @@include('html/footer.html', {})
+  </div>
+  @@include('html/script.html', {})
+</body>
+
+</html>
