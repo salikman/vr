@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/carousel/carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/carousel/carousel.thumbs.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/fancybox/fancybox.min.css" />
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Arcade Game Can Help You Improve Your Health</title>
-</head>
+@@include('html/head.html', {
+'title': 'Arcade Game Can Help You Improve Your Health'
+})
 
 <body>
     <div class="wrapper">
@@ -22,189 +11,32 @@
         <main class="page">
             <div data-observ></div>
 
-            <div class="page-news">
-                <div class="page-header">
-                    <div class="page-overlay"></div>
-                    <div class="page-container">
-                        <div class="page__title">Arcade Game Can Help You Improve Your Health</div>
-                        <div class="page__meta">
-                            <p class="post-author"><a href="#">John Doe</a></p>
-                            <p class="post-date">November 20, 2021</p>
-                            <span class="post-terms">News</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="page-container">
-                    <div class="page-row">
-                        <div class="post">
-                            <div class="post-slider">
-                                <div id="productCarousel" class="f-carousel">
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_1_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_1_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_1_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_2_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_2_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_2_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_3_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_3_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_3_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_4_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_4_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_4_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_5_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_5_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_5_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_6_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_6_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_6_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_7_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_7_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_7_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_8_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_8_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_8_b.jpg" />
-                                    </div>
-                                    <div class="f-carousel__slide"
-                                        data-thumb-src="https://fancyapps.com/img/car_9_s.jpg" data-fancybox="gallery"
-                                        data-src="https://fancyapps.com/img/car_9_b.jpg">
-                                        <img alt="" width="1600" height="1067"
-                                            data-lazy-src="https://fancyapps.com/img/car_9_b.jpg" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-img">
-                                <a data-fancybox href="@img/img-intro-1.jpg"><img src="@img/img-intro-1.jpg" alt=""></a>
-                            </div>
-                            <div class="post-content">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                    quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                    nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                                    justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-                                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-                                    porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                                    viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-                                    Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                                    ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </p>
-                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-                                    adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-                                    hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien
-                                    ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
-                                    faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
-                                    sagittis magna. </p>
-                                <h3>Best Game arcade in 2021</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                    quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                    nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                                    justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-                                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-                                    porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                                    viverra quis, feugiat a, tellus. </p>
-                                <p class="img">
-                                    <img src="@img/img-intro-3.jpg" alt="">
-                                    <img src="@img/img-intro-3.jpg" alt="">
-                                </p>
-                                <h4>7 Top Benefits of Arcade Games</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                    quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                    nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                                    justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-                                <ul>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Quisque aliquet nibh sit
-                                            amet lectus</span></li>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Quisque aliquet nibh sit
-                                            amet lectus</span></li>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Nulla at metus ultricies,
-                                            placerat augue</span></li>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Nulla at metus ultricies,
-                                            placerat augue</span></li>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Curabitur mollis ex
-                                            vestibulum</span></li>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Curabitur mollis ex
-                                            vestibulum</span></li>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Quisque aliquet nibh sit
-                                            amet lectus auctor</span></li>
-                                    <li><i aria-hidden="true" class="fas fa-check"></i><span>Quisque aliquet nibh sit
-                                            amet lectus auctor</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="sidebar">
-                            <div class="widget-post">
-                                <div class="widget-post__title">Recent Post</div>
-                                <ul class="widget-post__list">
-                                    <li>
-                                        <a href="#">
-                                            <p>Arcade Game Can Help You Improve Your Health</p>
-                                            <span><i class="fas fa-calendar-alt"></i>November 20, 2021</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <p>Arcade Game Can Help You Improve Your Health</p>
-                                            <span><i class="fas fa-calendar-alt"></i>November 20, 2021</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <p>Arcade Game Can Help You Improve Your Health</p>
-                                            <span><i class="fas fa-calendar-alt"></i>November 20, 2021</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <p>Arcade Game Can Help You Improve Your Health</p>
-                                            <span><i class="fas fa-calendar-alt"></i>November 20, 2021</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            @@include('html/pages/page-news.html')
         </main>
         @@include('html/footer.html', {})
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/app.min.js"></script>
-    <script type="module" src="js/fancy.js"></script>
+    @@include('html/script.html', {})
+
+    <script>
+        $().fancybox({
+        selector: '.postSwiper2 .swiper-slide:not(.swiper-slide-duplicate)',
+        backFocus: false,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        buttons: [
+            "close"
+        ]
+    });
+    $(document).on('click', '.postSwiper2 .swiper-slide.swiper-slide-duplicate', function (e) {
+        var $slides = $('.postSwiper2 .swiper-slide:not(.swiper-slide-duplicate)');
+        $slides
+            .eq(($(this).attr("data-swiper-slide-index") || 0) % $slides.length)
+            .trigger("click.fb-start", { $trigger: $(this) });
+        return false;
+    });
+    </script>
 </body>
 
 </html>

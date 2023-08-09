@@ -13,10 +13,10 @@ body {
 // Стили основного ограничивающего контейнера =================================
 /*
 * (i) Стили будут применяться ко 
-* всем классам содержащим *-container
-* Например header-container, main-container и т.д.
+* всем классам содержащим *__container
+* Например header__container, main__container и т.д.
 */
-[class*="-container"] {
+[class*="__container"] {
   max-width: rem($containerWidth + $mainOffset * 2);
   margin: 0 auto;
   padding: 0 rem($mainOffset);

@@ -75,6 +75,24 @@ var aboutSwiper2 = new Swiper(".about-slider2", {
   },
 });
 
+var postSwiper = new Swiper(".postSwiper", {
+  modules: [FreeMode],
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+});
+var postSwiper2 = new Swiper(".postSwiper2", {
+  modules: [Thumbs, Navigation],
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: postSwiper,
+  },
+});
+
 // Включить/выключить FLS (Full Logging System) (в работе)
 window['FLS'] = location.hostname === 'localhost'
 

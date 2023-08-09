@@ -16,8 +16,8 @@
     background: $bgColor;
   }
 
-  // .header-container
-  &-container {
+  // .header__container
+  &__container {
     height: rem($headerHeight);
     display: flex;
     align-items: center;
