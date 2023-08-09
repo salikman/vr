@@ -1,4 +1,5 @@
-section.news {
+.news {
+    margin-bottom: 50px;
 
     &__title,
     &__description {
@@ -8,7 +9,8 @@ section.news {
 
     &__description {
         width: 80%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__list {
@@ -298,11 +300,27 @@ section.news {
             margin-left: 0;
         }
 
+        .background-overlay {
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            border-radius: 6px;
+            background-color: #400D48;
+            opacity: 0.8;
+        }
+
         .widget-post {
+            position: relative;
             margin-bottom: 40px;
             padding: 50px;
             background-image: linear-gradient(180deg, #400D48 40%, $bgColor 100%);
             border-radius: 6px;
+
+            @include media(767) {
+                padding: 25px;
+            }
 
             &__title {
                 margin-bottom: 20px;
@@ -352,6 +370,142 @@ section.news {
                         }
                     }
                 }
+            }
+        }
+
+        .widget-feedback {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+            padding: 50px;
+            border-radius: 6px;
+            background-image: url('@img/bg-footer.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @include media(767) {
+                padding: 25px;
+            }
+
+            &__title {
+                position: relative;
+                color: #2AD5FF;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            &__text {
+                position: relative;
+                line-height: 1.5;
+            }
+
+            &__contact {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    path {
+                        color: #2AD5FF;
+                    }
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .widget-categoties {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 50px;
+            background-image: linear-gradient(180deg, #400D48 40%, $bgColor 100%);
+            border-radius: 6px;
+
+            @include media(767) {
+                padding: 25px;
+            }
+
+            &__title {
+                margin-bottom: 20px;
+                color: #2AD5FF;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        path {
+                            color: #2AD5FF;
+                        }
+
+                        &:hover {
+                            span {
+                                color: #2AD5FF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .widget-ads {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+            padding: 50px;
+            border-radius: 6px;
+            background-image: url('@img/img-intro-3.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @include media(767) {
+                padding: 25px;
+            }
+
+            &__block-empty {
+                height: 240px;
+            }
+
+            &__title {
+                position: relative;
+                text-align: center;
+                color: #2AD5FF;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            &__text {
+                position: relative;
+                text-align: center;
+                line-height: 1.5;
+            }
+
+            &__btn {
+                position: relative;
+                max-width: max-content;
+                margin: auto;
             }
         }
     }
